@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<!--Keren Melgarejo
+    INSY 4315
+    Product Page-->
+
+<html lang="en">
+    <head>
+        <meta charset=" utf-8">
+        <title>Kustom Kakes - Product Page</title>
+        <link rel = "stylesheet" type = "text/css" href =  "4315_Lab3_ExternalCSS.css">
+    </head>
+
+    <body>
+        <header>
+            <h1 class= "heading1">Kustom Kakes</h1>
+            <h2 class= "heading2">Our Products</h2>
+ 
+            <nav>
+                <a href="4315_Lab2_1001962104.html">Home Page</a>
+                <a href="product_kem.html">Products</a>
+                <a href="contact_kem.html">Contact Us</a>
+                <a href="about_kem.html">About Us</a>
+            </nav> 
+         </header>  	
+ 
+       <hr/>
+ 
+         <form id="prodForm">
+     
+         <table>
+             <thead>
+                 <tr>
+                     <td><a id="sortID" href="javascript:sortID()">Product ID</a></td>
+                     <td></td>
+                     <td><a id="sortName" href="javascript:sortName()">Product Name</a></td>
+                     <td>Description</td>
+                     <td><a id="sortPrice" href="javascript:sortPrice()">Price</a></td>
+                     <td>Quantity</td>
+                 </tr>
+                 <div>(Click a Column Heading to Sort)</div>
+             </thead>
+                 
+             <tbody id="tbodyRows">
+                 <!-- Table rows will be built dynamically using the code in the JSON Product file. -->
+             </tbody>
+ 
+         </table>
+         <p>
+             <input type="button" value="Submit" onClick="javacript:confirmQty( )">
+             <input type="button" value="Reset" onClick="javacript:confirmCancel( )">
+         </p>
+         </form>	
+         <script src="main.js"></script>
+    </body>	
+ </html>

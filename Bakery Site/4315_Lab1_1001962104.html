@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<!-- Keren Melgarejo
+     INSY 4315-001
+     ID:1001962104
+     Project 1 -->
+
+<html lang="en">
+
+  <head>
+
+   <meta charset="utf-8">
+
+   <title>Project 1- Keren Melgarejo, 4315 001</title>
+
+   <style>
+    body  {background-color: rgb(255, 243, 176); margin-left: 13%; margin-right: 13%;}
+
+    h1  {color: rgb(167, 214, 255); text-align: center; }
+
+    div {color: rgb(227, 127, 255); width: 70%; margin-right: 6%; margin-left: 6%;}
+
+    img {width: 30%; height: auto; border-radius: 25%; padding-right: 10%; padding-left: 10%;}
+
+    table {margin-right: auto; margin-left: auto; width: auto; color: rgb(167, 214, 255);}
+
+    th  {text-align: center;}
+
+    h2  {color: rgb(167, 214, 255); text-align: center; }
+
+    table {
+					margin:  auto;
+					width:  60%;
+			       }
+
+			tr a  {
+					font-size:  1.2em;
+					display: block;
+					color:  rgb(227, 127, 255);
+					text-decoration:  none;
+					text-align: center;
+				   }
+
+			td a:hover {
+					background-color: darkblue;
+					color: white;
+					}
+
+ 
+
+   </style>
+  </head>
+
+  <body>
+    <h1>Thank you for choosing Kustom Kakes!</h1>
+
+    <nav>
+      <table style="background-color: rgb(167, 214, 255);">
+       <tr>
+           
+          <td><a href="4315_Lab2_1001962104.html">Home Page</a></td>
+          <td><a href="product_kem.html">Products</a></td>
+          <td><a href="contact_kem.html">Contact Us</a></td>
+          <td><a href="about_kem.html">About Us</a></td>
+       </tr>
+      </table>
+   </nav>
+
+    <div>
+      <p style="float: left;">You have been randomly selected to participate in our Customer Satisfaction 
+      Survey!  
+      Please tell us a little bit about yourself by filling in the requested 
+      information in the survey below, then respond to the survey opinion 
+      statements based on your experiences with Kustom Kakes.  
+      To show our appreciation, we will send you get a $5 off coupon via e-mail   
+      valid to use on your next order with Kustom Kakes.</p></div>
+
+      <img src="Cakes/LunchBoxes.jpg" alt="Kustom Kakes Logo" style="width:16%; padding-left:2%; padding-right: 2%;">
+
+      <hr>
+      <form action="#">
+        <table>
+          <thead>
+            <tr><th colspan="4">Personal Information</th></tr>	
+          </thead>
+          <tbody>
+            <tr>
+              <td><label>First Name:</label></td>
+              <td><input name="fname" type="text" size="15" maxlength="15" required autofocus></td>
+              <td><label>Last Name:</label></td>
+              <td><input name="lname" type="text" size="20" maxlength="20" required></td>
+            </tr>
+            <tr>
+              <td><label>Email Address:</label></td>
+              <td><input name="email" type="email" size="40" maxlength="40" required></td>
+              <td><label>Phone Number:</label></td>
+              <td><input name = "phone" type = "tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="for example, Joe@abc.com"></td>
+            </tr>
+            <tr style="color:rgb(167, 214, 255)">
+              <td colspan="3" class="right"><label>Age Group:</label>
+                <input name="customer" type="radio" value="Under 21" required><label>Under 21</label>
+                <input name="customer" type="radio" value="21-40" required><label>21-40</label>
+                <input name="customer" type="radio" value="Over 40" required><label>Over 40</label>
+              </td>
+            </tr> 
+          </tbody>  
+        </table>
+      
+
+      <hr>
+        <h2>Please respond to the opinion statements using the following scale:</h2>
+
+        <div style="color:rgb(167, 214, 255)">
+          <ul style="list-style-type: none;" >
+            <li>1  = Strongly Agree</li>
+            <li>2  = Somewhat Agree</li>
+            <li>3 = Neither Agree nor Disagree</li>
+            <li>4 = Somewhat Disagree</li>
+            <li>5 = Strongly Disagree</li>
+          </ul>
+        </div>
+
+        <div style="color:rgb(167, 214, 255)">
+          <ul style="list-style-type: circle;">
+            <li>Sunrise Coffee Creations products are always fresh.
+              <select name="LunchBoxItems" id="items">
+                <option value="stronga">1</option>
+                <option value="somea">2</option>
+                <option value="neither">3</option>
+                <option value="somed">4</option>
+                <option value="strongd">5</option>
+              </select></li>
+            <li>Sunrise Coffee Creations products have an appealing aroma.
+              <select name="LunchBoxItems" id="items1">
+                <option value="stronga">1</option>
+                <option value="somea">2</option>
+                <option value="neither">3</option>
+                <option value="somed">4</option>
+                <option value="strongd">5</option>
+              </select></li>
+            <li>Sunrise Coffee Creations products are reasonably priced.
+              <select name="LunchBoxItems" id="items2">
+                <option value="stronga">1</option>
+                <option value="somea">2</option>
+                <option value="neither">3</option>
+                <option value="somed">4</option>
+                <option value="strongd">5</option>
+              </select></li>
+            <li>Sunrise Coffee Creations products are of the highest quality.
+              <select name="LunchBoxItems" id="items3">
+                <option value="stronga">1</option>
+                <option value="somea">2</option>
+                <option value="neither">3</option>
+                <option value="somed">4</option>
+                <option value="strongd">5</option>
+              </select></li>
+            <li>Overall, I am very satisfied with Sunrise Coffee Creations products.
+              <select name="LunchBoxItems" id="items4">
+                <option value="stronga">1</option>
+                <option value="somea">2</option>
+                <option value="neither">3</option>
+                <option value="somed">4</option>
+                <option value="strongd">5</option>
+              </select></li>
+          </ul>
+        </div>
+
+        <div style="text-align: center;">
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset">
+        </div>
+      </form>
+
+  </body>
+</html>
+
+
+
+
+
+
+

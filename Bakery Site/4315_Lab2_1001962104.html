@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<!-- Keren Melgarejo
+     INSY 4315-001
+     ID:1001962104
+     Project 2 -->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Lab2 - External CSS</title>
+        <link rel = "stylesheet" type = "text/css" href = "4315_Lab2_ExternalCSS.css">
+    
+		<script type="text/JavaScript">
+			var cName, cValue, c, expires;
+			var d = new Date();
+          
+			function createCookie(cName, cValue, expDays) 
+			{
+			  d.setTime(d.getTime() + (expDays * 24 * 60 * 60 * 1000));
+			  expires = "expires="+d.toUTCString();
+			  document.cookie = cName + "=" + cValue + ";" + expires ;
+			  alert("Cookie created.")
+			}
+
+			function readCookie(cName) 
+			{
+			  var keyName = cName + "="; //string
+			  var cArray = document.cookie.split(';'); //split methos splits cookies in semicolon and puts values in an array
+			  for(var i = 0; i < cArray.length; i++) 
+			  {
+			  	//loop through the array of key/value pairs from the cookie
+			    c = cArray[i];
+			    while (c.charAt(0) == ' ') 
+			    {
+			      c = c.substring(1);
+			    }
+			    if (c.indexOf(keyName) == 0) 
+			    {
+			      return c.substring(keyName.length, c.length);//length of keyname 
+			    }
+			  }
+			  return "";
+			}
+
+			//check for cookie
+			function checkCookie() 
+			{
+			var user = readCookie("userName");
+            //To delete an existing cookie 
+			document.cookie = "userName=;expires=" + d.toUTCString(-1);
+		    //If the cookie exists and has a key/value pair stored, display the name in a welcome dialog box,
+			//and show the key/value pair info on the web page
+			  if (user != "") 
+			  {
+			    document.getElementById("userWelcome").innerHTML = "Welcome, " + user + "! We hope you will enjoy your Kustom Kakes experience!";
+                document.getElementById("nameLink").innerHTML = "Please click here if you are not " + user;
+			  } 
+			  else 
+			  {
+                if (user == "" || user == null) 
+                {
+                    document.getElementById("userWelcome").innerHTML = "Want a more personalized experience on our website?";
+                    document.getElementById("nameLink").innerHTML = "Please click here to provide your name" ;
+			    }
+              }
+			}
+
+            function enterNameLink()
+			{
+				user = prompt("Welcome! Please enter your name:", "");
+                if (user !== null && user !== "") 
+                {
+                createCookie("userName", user, 21);
+                document.getElementById("userWelcome").innerHTML = "Welcome, " + user + "! We hope you will enjoy your Kustom Kakes experience!";
+                document.getElementById("nameLink").innerHTML = "";
+                }
+                else {
+                    document.getElementById("userWelcome").innerHTML = "Want a more personalized experience on our website?";
+                    document.getElementById("nameLink").innerHTML = "Please click here to provide your name" ;
+                }
+                
+			}
+
+            function genRandomNumber() {
+                var randomNumber = Math.ceil(Math.random() * 10);
+                if (randomNumber % 3 == 0) {
+                    alert("Congratulations! You've been selected for a survey.");
+                    setTimeout(function () {
+                        window.location.href = "4315_Lab1_1001962104.html";
+                    })
+                }
+            }
+
+		</script>
+   </head>
+
+   <body onload="checkCookie(); genRandomNumber();">
+    <h1 class="heading1">Thank you for choosing Kustom Kakes</h1>
+
+    <nav>
+        <table style="background-color: rgb(167, 214, 255);"">
+         <tr>
+             
+            <td><a href="4315_Lab2_1001962104.html">Home Page</a></td>
+            <td><a href="product_kem.html">Products</a></td>
+            <td><a href="contact_kem.html">Contact Us</a></td>
+            <td><a href="about_kem.html">About Us</a></td>
+         </tr>
+        </table>
+     </nav>
+
+        <div>
+            <p style="float: left;">Located in Dallas, TX, Kustom Kakes makes
+                personalized and delicious mini lunch-box cakes, perfect for any occasion!
+                At Kustom Kakes, we specialize in creating unique cakes for you. 
+                From burn-away cakes to glitter cakes, if you can imagine it, we can make it. 
+                Our lunch-box cakes are designed for convenience, coming with utensils, making them perfect for enjoying on the go.
+                Visit our shop today and indulge in our wide variety of flavors! 
+                Choose from classic options like chocolate, vanilla, and marble. 
+                And don't forget to ask about our seasonal filling flavors, 
+                which currently include strawberry, peach, raspberry, and blueberry!
+                Let Kustom Kakes take care of your custom cake needs. Stop by and visit us today</p>
+        </div>
+        <img src="Cakes/LunchBoxes.jpg" alt="Kustom Kakes Logo" style= "float: right; " >
+        
+        <div id="userWelcome" style=" text-align: right; padding-top: 20%;" >
+        </div>
+        <img src="Cakes/Box.jpg" alt="Kustom Kakes Box" style= "float: left; border-radius: 20%;" >
+
+        <p style=" padding-left: 10%;">
+            <a id = "nameLink" href = "javascript: enterNameLink()"></a>
+        </p>
+        <img src="Cakes/Prep.jpg" alt="Kustom Kakes Box" style= "float: right; border-radius: 40%; " >
+   </body>
+
+</html>

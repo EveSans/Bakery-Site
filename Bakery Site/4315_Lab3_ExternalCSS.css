@@ -1,0 +1,50 @@
+/* Keren Melgarejo
+     INSY 4315-001
+     ID:1001962104
+     Project 3 External CSS*/
+
+    .heading1 {text-align: center; color: rgb(167, 214, 255); }
+
+    .heading2 {text-align: center; color: rgb(167, 214, 255); }
+
+    header		{text-align: center;
+        color:rgb(227, 127, 255);
+        padding-bottom: .5%;}
+
+    body  {background-color: rgb(255, 243, 176); }
+     
+    div {text-align: center; color: rgb(227, 127, 255); width: 70%; }
+
+    nav	a		{font-size: 1.2em;
+        text-decoration: none;
+        text-align: center;
+        color:  rgb(227, 127, 255);
+        background-color: rgb(167, 214, 255);
+        padding: .5%;}
+
+    nav a:hover {color: white;
+       background-color:   darkblue}
+
+
+     tr 			{text-align: center;}
+
+     table			{width: 90%;
+                      margin-left: auto;
+                       margin-right: auto;}
+
+     p				{text-align: center;}
+
+     #tbodyRows	{border: solid;
+                       table-layout: fixed;}
+
+        tr 			{padding: auto;
+            color: rgb(167, 214, 255);
+                       border: solid;
+                       height: 5%;}
+
+        td 			{border: solid;
+                       height: 5%;}
+
+        img			{width: 90%;}
+
+        hr 			{width: 90%;}

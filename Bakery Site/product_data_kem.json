@@ -1,0 +1,72 @@
+[
+	{
+		"prodID": 101, 
+		"prodImg": "Cakes/VanillaCake.jpg",
+		"prodName": "Vanilla - Cake (10 Oz)",
+		"prodDesc": "This is our most popoular flavor. Has a sweet and buttery taste with a light and moist texture, that's perfect for any occasion.",
+		"prodPrice": 10.00
+	},
+	{
+		"prodID": 102,
+		"prodImg": "Cakes/ChocCake.jpg",
+		"prodName": "Chocolate - Cake (10 Oz)",
+		"prodDesc": "This is our second most popular flavor. Has a strong cocoa and nutty taste with a fluffy and velvety texture, great for all chocolate lovers.",
+		"prodPrice": 10.00
+	},
+	{
+		"prodID": 103,
+		"prodImg": "Cakes/CreamFill.jpg",
+		"prodName": "CreamFill - Custom Choice",
+		"prodDesc": "A smooth bed of custard cream to go in between cake layers, your choice of flavor.",
+		"prodPrice": 9.00
+	},
+	{
+		"prodID": 104, 
+		"prodImg": "Cakes/FruitJam.jpg",
+		"prodName": "FruitJam - Custom Choice",
+		"prodDesc": "A thick sweet fruit spread filling to go in between cake layers, your choice of fruit.",
+		"prodPrice": 8.00
+	},
+	{
+		"prodID": 105, 
+		"prodImg": "Cakes/Glitter.jpg",
+		"prodName": "Glitter Cake - Custom Design",
+		"prodDesc": "Want a cake that sparkles just like your ocassion? Choose our Glitter Cake, with equal parts shine and tasty-ness (has edible glitter).",
+		"prodPrice": 12.00
+	},
+    {
+		"prodID": 106, 
+		"prodImg": "Cakes/BurnAway.jpg",
+		"prodName": "Burn Away Cake - Custom Design",
+		"prodDesc": "This is a layered cake that incorporates an edible sheet with custom printed design, burns away to reveal a delicous cake layer.",
+		"prodPrice": 12.00
+	},
+    {
+		"prodID": 107, 
+		"prodImg": "Cakes/Stab.jpg",
+		"prodName": "Stab Cake - Custom Design",
+		"prodDesc": "As the title suggests this cake is stab-able. Filled with flavored liquid syrup of your choice that seeps out once cut through.",
+		"prodPrice": 12.00
+	},
+    {
+		"prodID": 108, 
+		"prodImg": "Cakes/StraightCandles.jpg",
+		"prodName": "Straight Candles - (5 Inch)",
+		"prodDesc": "Regular straight shaped candles that come in a random color.",
+		"prodPrice": 1.00
+	},
+    {
+		"prodID": 109, 
+		"prodImg": "Cakes/SquiggleCandles.jpg",
+		"prodName": "Curved Candles - (5 Inch)",
+		"prodDesc": "Curved shaped candles that come in a random color.",
+		"prodPrice": 1.00
+	},
+    {
+		"prodID": 110, 
+		"prodImg": "Cakes/NumberCandles.jpg",
+		"prodName": "Number Candles - (3 Inch)",
+		"prodDesc": "Numbered candles that come in a random color.",
+		"prodPrice": 1.50
+	}
+]
