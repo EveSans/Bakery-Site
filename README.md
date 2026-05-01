@@ -7,14 +7,16 @@ This project contains both code and design materials.
 
 Title: Kustom Kakes
 
-Purpose: Kustom Kakes is a bakery website where customers can order custom cakes for any occasion. 
-
-How to Install and Run:
-
-Optional notes:
+Purpose: Kustom Kakes is a static bakery website where customers can order custom cakes for any occasion. 
 
 Preconditions:
+
+How to Run:
+
+Structure:
 
 Test Steps:
 
 Expected Results:
+
+Notes:
